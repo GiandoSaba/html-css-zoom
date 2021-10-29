@@ -18,20 +18,29 @@ body {
     overflow-x: auto;
 }
 
+
+/* COMMON */
+
+.min-width {
+    width: 100%;
+    min-width: 1020px;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
 /* header */
 
 .nav-header {
-    width: 100%;
     height: 50px;
-    min-width: 1170px;
-    z-index: 2;
-    display: flex;
     justify-content: flex-end;
     background-color: black;
-}
-
-.nav-header .button-container {
-    margin: 0.3em;
 }
 
 .nav-header .button-container button {
@@ -51,9 +60,7 @@ body {
 
 main {
     height: calc(100% - 125px);
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -81,9 +88,6 @@ main .image .name {
 
 .nav-footer {
     height: 75px;
-    width: 100%;
-    min-width: 1170px;
-    display: flex;
     justify-content: space-between;
     text-align: center;
     background-color: #222222;
@@ -95,33 +99,20 @@ main .image .name {
 
 .nav-footer .ico-button i {
     font-size: 1.3em;
-    margin: 0.3em 0.5em;
 }
 
-.col-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ico-container {
+    margin: 1em;
 }
 
-.col-left > div {
-    margin: 0.3em 1em;
+.ico-container .ico-button i {
+    font-size: 2em;
 }
 
-.col-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ico-container .ico-button span {
+    font-size: 1em;
 }
 
-.col-center > div {
-    margin: 0.3em 1em;
-}
-
-.ico-arrow > * {
-    display: inline-block;
-    vertical-align: middle;
-}
 
 .green-ico {
     color: #4BC800;
@@ -129,16 +120,12 @@ main .image .name {
 
 .col-right {
     background-color: #4A4A4A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .col-right a {
     text-decoration: none;
     color: red;
     display: block;
-    height: 100%;
-    line-height: 85px;
+    margin: auto;
     padding: 0 1em;
 }
