@@ -1,10 +1,48 @@
+/* BASIC */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: black;
+html {
+    font-size: 100%;
     color: white;
+}
+
+body {
+    min-width: 1050px;
+    height: 100vh;
+    background-color: black;
+}
+body .nav-footer,
+body main {
+    border: 1px solid white;
+}
+
+.nav-header {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-header .button-container {
+    margin: 0.3em;
+}
+
+.nav-header .button-container button {
+    border: 0;
+    border-radius: 3px;
+    padding: 0.3em;
+    background-color: #4A4A4A;
+    color: white;
+}
+
+main {
+    height: calc(100% - 150px);
+}
+
+.nav-footer {
+    height: 100px;
 }
