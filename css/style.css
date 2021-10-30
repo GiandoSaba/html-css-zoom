@@ -100,17 +100,24 @@ main .image .name {
 }
 
 .ico-container {
-    margin: 1em;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.ico-container:hover {
+    background-color: #4A4A4A;
+    cursor: pointer;
 }
 
 .ico-container .ico-button i {
     font-size: 2em;
+    margin: 0.2em;
 }
 
 .ico-container .ico-button span {
     font-size: 1em;
 }
-
 
 .green-ico {
     color: #4BC800;
